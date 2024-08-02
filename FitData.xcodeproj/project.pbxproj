@@ -17,6 +17,9 @@
 		8021F5252C52D3C6004AFCEC /* ProgressCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8021F5242C52D3C6004AFCEC /* ProgressCircleView.swift */; };
 		8021F5282C5C9C6F004AFCEC /* ActivityCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8021F5272C5C9C6F004AFCEC /* ActivityCard.swift */; };
 		8021F52A2C5D7445004AFCEC /* WorkoutCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8021F5292C5D7445004AFCEC /* WorkoutCard.swift */; };
+		8021F52C2C5D7B88004AFCEC /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8021F52B2C5D7B88004AFCEC /* HomeViewModel.swift */; };
+		8021F5312C5D7D07004AFCEC /* Workout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8021F5302C5D7D07004AFCEC /* Workout.swift */; };
+		8021F5332C5D7D12004AFCEC /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8021F5322C5D7D12004AFCEC /* Activity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,11 +29,14 @@
 		8021F5142C517E24004AFCEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8021F5172C517E24004AFCEC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8021F51E2C519642004AFCEC /* FitTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitTabView.swift; sourceTree = "<group>"; };
-		8021F5202C519767004AFCEC /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeView.swift; path = ../HomeView.swift; sourceTree = "<group>"; };
+		8021F5202C519767004AFCEC /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		8021F5222C5197F1004AFCEC /* HistoricDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoricDataView.swift; sourceTree = "<group>"; };
-		8021F5242C52D3C6004AFCEC /* ProgressCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProgressCircleView.swift; path = ../ProgressCircleView.swift; sourceTree = "<group>"; };
+		8021F5242C52D3C6004AFCEC /* ProgressCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressCircleView.swift; sourceTree = "<group>"; };
 		8021F5272C5C9C6F004AFCEC /* ActivityCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityCard.swift; sourceTree = "<group>"; };
 		8021F5292C5D7445004AFCEC /* WorkoutCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutCard.swift; sourceTree = "<group>"; };
+		8021F52B2C5D7B88004AFCEC /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		8021F5302C5D7D07004AFCEC /* Workout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workout.swift; sourceTree = "<group>"; };
+		8021F5322C5D7D12004AFCEC /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,11 +69,9 @@
 		8021F50F2C517E1F004AFCEC /* FitData */ = {
 			isa = PBXGroup;
 			children = (
-				8021F5262C5C9C1E004AFCEC /* New Group */,
+				8021F5262C5C9C1E004AFCEC /* Home */,
 				8021F5102C517E1F004AFCEC /* FitDataApp.swift */,
 				8021F5122C517E1F004AFCEC /* ContentView.swift */,
-				8021F51E2C519642004AFCEC /* FitTabView.swift */,
-				8021F5222C5197F1004AFCEC /* HistoricDataView.swift */,
 				8021F5142C517E24004AFCEC /* Assets.xcassets */,
 				8021F5162C517E24004AFCEC /* Preview Content */,
 			);
@@ -77,20 +81,49 @@
 		8021F5162C517E24004AFCEC /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				8021F51E2C519642004AFCEC /* FitTabView.swift */,
+				8021F5222C5197F1004AFCEC /* HistoricDataView.swift */,
 				8021F5172C517E24004AFCEC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		8021F5262C5C9C1E004AFCEC /* New Group */ = {
+		8021F5262C5C9C1E004AFCEC /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				8021F5242C52D3C6004AFCEC /* ProgressCircleView.swift */,
+				8021F52E2C5D7C4A004AFCEC /* Models */,
+				8021F52D2C5D7C32004AFCEC /* ViewModels */,
+				8021F52F2C5D7C79004AFCEC /* Views */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		8021F52D2C5D7C32004AFCEC /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				8021F52B2C5D7B88004AFCEC /* HomeViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		8021F52E2C5D7C4A004AFCEC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8021F5302C5D7D07004AFCEC /* Workout.swift */,
+				8021F5322C5D7D12004AFCEC /* Activity.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8021F52F2C5D7C79004AFCEC /* Views */ = {
+			isa = PBXGroup;
+			children = (
 				8021F5202C519767004AFCEC /* HomeView.swift */,
+				8021F5242C52D3C6004AFCEC /* ProgressCircleView.swift */,
 				8021F5292C5D7445004AFCEC /* WorkoutCard.swift */,
 				8021F5272C5C9C6F004AFCEC /* ActivityCard.swift */,
 			);
-			path = "New Group";
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,12 +197,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				8021F5132C517E1F004AFCEC /* ContentView.swift in Sources */,
+				8021F52C2C5D7B88004AFCEC /* HomeViewModel.swift in Sources */,
 				8021F52A2C5D7445004AFCEC /* WorkoutCard.swift in Sources */,
+				8021F5312C5D7D07004AFCEC /* Workout.swift in Sources */,
 				8021F5252C52D3C6004AFCEC /* ProgressCircleView.swift in Sources */,
 				8021F5212C519767004AFCEC /* HomeView.swift in Sources */,
 				8021F5232C5197F1004AFCEC /* HistoricDataView.swift in Sources */,
 				8021F5112C517E1F004AFCEC /* FitDataApp.swift in Sources */,
 				8021F5282C5C9C6F004AFCEC /* ActivityCard.swift in Sources */,
+				8021F5332C5D7D12004AFCEC /* Activity.swift in Sources */,
 				8021F51F2C519642004AFCEC /* FitTabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
