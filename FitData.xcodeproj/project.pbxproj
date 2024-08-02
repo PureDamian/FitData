@@ -16,6 +16,7 @@
 		8021F5232C5197F1004AFCEC /* HistoricDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8021F5222C5197F1004AFCEC /* HistoricDataView.swift */; };
 		8021F5252C52D3C6004AFCEC /* ProgressCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8021F5242C52D3C6004AFCEC /* ProgressCircleView.swift */; };
 		8021F5282C5C9C6F004AFCEC /* ActivityCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8021F5272C5C9C6F004AFCEC /* ActivityCard.swift */; };
+		8021F52A2C5D7445004AFCEC /* WorkoutCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8021F5292C5D7445004AFCEC /* WorkoutCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		8021F5222C5197F1004AFCEC /* HistoricDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoricDataView.swift; sourceTree = "<group>"; };
 		8021F5242C52D3C6004AFCEC /* ProgressCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProgressCircleView.swift; path = ../ProgressCircleView.swift; sourceTree = "<group>"; };
 		8021F5272C5C9C6F004AFCEC /* ActivityCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityCard.swift; sourceTree = "<group>"; };
+		8021F5292C5D7445004AFCEC /* WorkoutCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 			children = (
 				8021F5242C52D3C6004AFCEC /* ProgressCircleView.swift */,
 				8021F5202C519767004AFCEC /* HomeView.swift */,
+				8021F5292C5D7445004AFCEC /* WorkoutCard.swift */,
 				8021F5272C5C9C6F004AFCEC /* ActivityCard.swift */,
 			);
 			path = "New Group";
@@ -161,6 +164,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8021F5132C517E1F004AFCEC /* ContentView.swift in Sources */,
+				8021F52A2C5D7445004AFCEC /* WorkoutCard.swift in Sources */,
 				8021F5252C52D3C6004AFCEC /* ProgressCircleView.swift in Sources */,
 				8021F5212C519767004AFCEC /* HomeView.swift in Sources */,
 				8021F5232C5197F1004AFCEC /* HistoricDataView.swift in Sources */,
